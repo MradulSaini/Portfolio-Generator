@@ -19,6 +19,9 @@ class Portfolio(models.Model):
 	skill4 = models.CharField(max_length=100, default="", blank=True)
 	skill5 = models.CharField(max_length=100, default="", blank=True)
 	skill6 = models.CharField(max_length=100, default="", blank=True)
+	skill7 = models.CharField(max_length=100, default="", blank=True)
+	skill8 = models.CharField(max_length=100, default="", blank=True)
+	skill9 = models.CharField(max_length=100, default="", blank=True)
 	facebook =  models.CharField(max_length=500, default="")
 	github = models.CharField(max_length=500, default="", blank=True)
 	twitter = models.CharField(max_length=500, default="", blank=True)
@@ -33,6 +36,11 @@ class Portfolio(models.Model):
 	project3_name = models.CharField(max_length=500, default="", blank=True)
 	project3_url = models.CharField(max_length=500, default="", blank=True)
 	project3_description = models.CharField(max_length=300, default="", blank=True)
+	project4_name = models.CharField(max_length=500, default="", blank=True)
+	project4_url = models.CharField(max_length=500, default="", blank=True)
+	project4_description = models.CharField(max_length=300, default="", blank=True)
+	
+	
 	date_created = models.DateField(auto_now_add=True)
 	time_created = models.TimeField(auto_now_add=True)
 	updated_on = models.DateField(auto_now=True)
